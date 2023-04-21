@@ -1,2 +1,13 @@
 # zacharywgibbs-portfolio
-A portfolio website I created to show information about me and samples of my work.
+
+## Description
+
+
+## Resources
+
+[deployedlink](www.urlgoeshere.com)
+[repositorylink](www.linkgoeshere.com)
+
+### Screen
+
+![screenshot](./assets/images/yourscreenshotname)

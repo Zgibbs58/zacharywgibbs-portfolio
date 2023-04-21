@@ -1,0 +1,47 @@
+html, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lemonchiffon;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: slategray;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;  
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 4px 8px 20px 6px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+header,
+section,
+footer {
+    padding: 20px;
+
+}
