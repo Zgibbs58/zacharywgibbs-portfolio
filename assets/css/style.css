@@ -74,6 +74,7 @@ footer {
     align-items: center;
     font-size: 3rem;
     color: black;
+    text-align: center;
 }
 .intro-section img {
     max-width: 100%;
@@ -92,7 +93,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 100%;
+    flex: 50%;
     align-items: center;
     gap: 10px;
     justify-content: center;
@@ -110,9 +111,22 @@ footer {
 .work-row {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .work-row img {
     height: auto;
     width: 100%;
 }
+
+@media screen and (max-width: 700px) {
+    .intro-section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .intro-section .intro {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+  }
