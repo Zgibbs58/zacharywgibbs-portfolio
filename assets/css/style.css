@@ -14,14 +14,26 @@ main {
     min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: slategray;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     display: flex;  
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #296d98;
+}
+
+header a,
+nav a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 4px 8px 6px;
 }
 
 nav {
@@ -29,14 +41,14 @@ nav {
     justify-content: flex-end;
 }
 
-nav a {
+/* nav a {
     text-decoration: none;
-    color: white;
     margin: 4px 8px 20px 6px;
-}
+    color: black;
+} */
 
 nav a:hover {
-    color: yellow;
+    text-decoration: underline;
 }
 
 header,
@@ -44,4 +56,34 @@ section,
 footer {
     padding: 20px;
 
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 0;
+    max-height: 100vh;
+}
+
+.intro-section .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: black;
+}
+.intro-section img {
+    max-width: 100%;
+}
+
+.img-about {
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
 }
