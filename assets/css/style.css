@@ -61,7 +61,7 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: white;
-    padding: 5rem 2rem;
+    padding: 0;
     max-height: 100vh;
 }
 
