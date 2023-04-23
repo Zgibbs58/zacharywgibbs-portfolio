@@ -135,6 +135,8 @@ footer {
 
 .contact-section {
     display: flex;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
     padding: 1rem;
 }
