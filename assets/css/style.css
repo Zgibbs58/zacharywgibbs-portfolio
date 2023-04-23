@@ -25,6 +25,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #296d98;
+    z-index: 2;
 }
 
 header a,
@@ -115,18 +116,14 @@ footer {
 }
 
 .work-section-main img {
-    /* display: flex;
-    flex-shrink: 3;
-    max-width: 100%;
-    min-width: 200px; */
     height: auto;
     width: 100%;
-    transition: .5s;
+    transition: all .5s ease-in-out;
 }
 
 .work-section-main img:hover {
     transform: scale(1.02);
-    /* transition: all ease-in-out .5s; */
+    box-shadow: inset 0px 0px 10px rgba(41, 109, 152, 1), 0 0 15px rgba(41, 109, 152, 1);
 }
 
 .work-section-secondary {
@@ -138,6 +135,12 @@ footer {
 .work-section-secondary img {
     height: auto;
     width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.work-section-secondary img:hover {
+    transform: scale(1.02);
+    box-shadow: inset 0px 0px 10px rgba(41, 109, 152, 1), 0 0 15px rgba(41, 109, 152, 1);
 }
 
 .contact-section {
@@ -168,16 +171,19 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    .intro-section-secondary {
+    /* .intro-section {
         flex-wrap: wrap;
         justify-content: center;
-    }
+    } */
+    
+  }
+  @media screen and (max-width: 614px) {
+
     .intro-section .intro {
         font-size: 1rem;
         padding: 1rem;
     }
-  }
-  @media screen and (max-width: 614px) {
+    
     header h1 {
         font-size: small;
     }
@@ -185,7 +191,7 @@ footer {
     nav a {
         font-size: small;
     }
-    .work-row {
+    .work-section-secondary {
         flex-wrap: wrap;
         gap: 5px;
     }
