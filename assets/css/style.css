@@ -171,6 +171,9 @@ footer {
     }
   }
   @media screen and (max-width: 614px) {
+    header h1 {
+        font-size: medium;
+    }
     .work-row {
         flex-wrap: wrap;
         gap: 5px;
