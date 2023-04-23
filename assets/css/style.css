@@ -172,7 +172,11 @@ footer {
   }
   @media screen and (max-width: 614px) {
     header h1 {
-        font-size: medium;
+        font-size: small;
+    }
+
+    nav a {
+        font-size: small;
     }
     .work-row {
         flex-wrap: wrap;
