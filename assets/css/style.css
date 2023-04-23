@@ -55,7 +55,6 @@ header,
 section,
 footer {
     padding: 20px;
-
 }
 
 .intro-section {
@@ -91,12 +90,19 @@ footer {
 
 .work-column {
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 50%;
     align-items: center;
-    gap: 10px;
     justify-content: center;
+    gap: 5px;
+    /* padding: 5px; */
+}
+
+.work-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .work-row-1 img {
@@ -106,13 +112,6 @@ footer {
     min-width: 200px; */
     height: auto;
     width: 100%;
-}
-
-.work-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .work-row img {
@@ -128,5 +127,13 @@ footer {
     .intro-section .intro {
         font-size: 1rem;
         padding: 1rem;
+    }
+  }
+  @media screen and (max-width: 614px) {
+    .work-row {
+        flex-wrap: wrap;
+        gap: 5px;
+        /* align-items: stretch;
+        flex-shrink: 3; */
     }
   }
