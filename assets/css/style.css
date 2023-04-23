@@ -61,7 +61,7 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: white;
-    padding: 0;
+    padding: 5rem 2rem;
     max-height: 100vh;
 }
 
@@ -79,13 +79,23 @@ footer {
     max-width: 100%;
 }
 
-.img-about {
+.img-intro {
     display: flex;
     max-width: 40%;
-    flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
     color: black;
+}
+
+.about-section h2 {
+    padding: 3rem 0;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-column {
@@ -97,6 +107,10 @@ footer {
     justify-content: center;
     gap: 5px;
     /* padding: 5px; */
+}
+
+.work-column h2 {
+    padding: 3rem 0;
 }
 
 .work-row {
@@ -119,6 +133,31 @@ footer {
     width: 100%;
 }
 
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contact-section h3 {
+    padding: 1rem;
+}
+
+.contact-section ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-section ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.contact-section a {
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width: 700px) {
     .intro-section{
         flex-wrap: wrap;
@@ -133,7 +172,13 @@ footer {
     .work-row {
         flex-wrap: wrap;
         gap: 5px;
-        /* align-items: stretch;
-        flex-shrink: 3; */
+    }
+    
+    .contact-section ul {
+        flex-direction: column;
+    }
+
+    .contact-section li {
+        padding: 1rem;
     }
   }
