@@ -106,7 +106,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     /* padding: 5px; */
 }
 
@@ -146,6 +146,7 @@ footer {
 
 .work-section-secondary {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
 }
