@@ -5,7 +5,7 @@ html, * {
 }
 
 body {
-    background-color: lemonchiffon;
+    background-color: rgb(121, 121, 121);
 }
 
 main {
@@ -82,7 +82,6 @@ footer {
     max-width: 40%;
     flex-wrap: wrap;
     background-color: white;
-    color: black;
 }
 
 .intro-section img {
@@ -115,15 +114,34 @@ footer {
     padding: 3rem 0;
 }
 
+.work-section-main {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+.work-section-main:hover {
+    transform: scale(1.02);
+    box-shadow: inset 0px 0px 10px rgba(41, 109, 152, 1), 0 0 15px rgba(41, 109, 152, 1);
+}
+
+.work-section-main p {
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    border: 3px solid white;
+    padding: 0.5rem;
+    font-weight: 600;
+    background-color: rgb(85, 85, 85);
+}
+
 .work-section-main img {
     height: auto;
     width: 100%;
-    transition: all .5s ease-in-out;
-}
-
-.work-section-main img:hover {
-    transform: scale(1.02);
-    box-shadow: inset 0px 0px 10px rgba(41, 109, 152, 1), 0 0 15px rgba(41, 109, 152, 1);
 }
 
 .work-section-secondary {
@@ -132,13 +150,43 @@ footer {
     gap: 10px;
 }
 
-.work-section-secondary img {
-    height: auto;
-    width: 100%;
+.work-section-secondary figure {
+    position: relative;
+}
+
+.work-section-secondary figure p {
+        font-size: 1rem;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        border: 3px solid white;
+        padding: 0.5rem;
+        font-weight: 600;
+}
+
+.work-section-secondary p {
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    border: 3px solid white;
+    padding: 0.5rem;
+    font-weight: 600;
+    background-color: rgb(85, 85, 85);
+}
+
+.work-section-secondary figure {
     transition: all .5s ease-in-out;
 }
 
-.work-section-secondary img:hover {
+.work-section-secondary img {
+    height: auto;
+    width: 100%;
+}
+
+.work-section-secondary figure:hover {
     transform: scale(1.02);
     box-shadow: inset 0px 0px 10px rgba(41, 109, 152, 1), 0 0 15px rgba(41, 109, 152, 1);
 }
@@ -183,6 +231,9 @@ footer {
     
   }
   @media screen and (max-width: 614px) {
+    .intro-section {
+        /* padding-top: 4rem; */
+    }
 
     .intro-section .intro {
         font-size: 1rem;
@@ -196,9 +247,18 @@ footer {
     nav a {
         font-size: small;
     }
+
+    .work-section-main p {
+        font-size: .5rem;
+    }
+
     .work-section-secondary {
         flex-wrap: wrap;
         gap: 5px;
+    }
+
+    .work-section-secondary figure p {
+        font-size: .65rem;
     }
     
     .contact-section ul {
