@@ -28,6 +28,11 @@ header {
     z-index: 2;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 header a,
 nav a {
     display: flex;
@@ -36,17 +41,6 @@ nav a {
     text-decoration: none;
     margin: 4px 8px 6px;
 }
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/* nav a {
-    text-decoration: none;
-    margin: 4px 8px 20px 6px;
-    color: black;
-} */
 
 nav a:hover {
     text-decoration: underline;
@@ -92,11 +86,12 @@ footer {
     padding: 3rem 0;
 }
 
-.about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.about-section h2 {
+    text-align: center;
+}
+
+.about-section p {
+    font-size: .75rem;
 }
 
 .work-column {
@@ -107,7 +102,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    /* padding: 5px; */
 }
 
 .work-column h2 {
@@ -222,21 +216,20 @@ footer {
     color: #296d98;
 }
 
-@media screen and (max-width: 700px) {
-    /* .intro-section {
+  @media screen and (max-width: 614px) {
+
+    .intro-section {
         flex-wrap: wrap;
         justify-content: center;
-    } */
-    
-  }
-  @media screen and (max-width: 614px) {
-    .intro-section {
-        /* padding-top: 4rem; */
     }
 
     .intro-section .intro {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 1rem;
+    }
+
+    .img-intro {
+        max-width: 80%;
     }
 
     header h1 {
@@ -263,10 +256,6 @@ footer {
     .work-section-secondary figure p {
         font-size: .65rem;
     }
-    
-.work-section-secondary img {
-
-}
 
     .contact-section ul {
         flex-direction: column;
