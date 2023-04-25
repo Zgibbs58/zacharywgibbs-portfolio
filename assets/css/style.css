@@ -130,8 +130,8 @@ footer {
 .work-section-main p {
     font-size: 1rem;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0px;
     color: white;
     border: 3px solid white;
     padding: 0.5rem;
@@ -152,13 +152,20 @@ footer {
 
 .work-section-secondary figure {
     position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.work-section-secondary figure:hover {
+    transform: scale(1.02);
+    box-shadow: inset 0px 0px 10px rgba(41, 109, 152, 1), 0 0 15px rgba(41, 109, 152, 1);
+    border: none;
 }
 
 .work-section-secondary figure p {
         font-size: 1rem;
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 0;
+        left: 0;
         color: white;
         border: 3px solid white;
         padding: 0.5rem;
@@ -177,18 +184,9 @@ footer {
     background-color: rgb(85, 85, 85);
 }
 
-.work-section-secondary figure {
-    transition: all .5s ease-in-out;
-}
-
 .work-section-secondary img {
-    height: auto;
+    height: 100%;
     width: 100%;
-}
-
-.work-section-secondary figure:hover {
-    transform: scale(1.02);
-    box-shadow: inset 0px 0px 10px rgba(41, 109, 152, 1), 0 0 15px rgba(41, 109, 152, 1);
 }
 
 .contact-section {
@@ -252,6 +250,10 @@ footer {
         font-size: .5rem;
     }
 
+    .work-section-main img {
+        min-height: 7rem;
+    }
+
     .work-section-secondary {
         flex-wrap: wrap;
         gap: 5px;
@@ -261,6 +263,10 @@ footer {
         font-size: .65rem;
     }
     
+.work-section-secondary img {
+
+}
+
     .contact-section ul {
         flex-direction: column;
     }
