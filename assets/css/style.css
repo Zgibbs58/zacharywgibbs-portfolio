@@ -58,6 +58,7 @@ footer {
     background-color: white;
     padding: 0;
     max-height: 100vh;
+    padding-bottom: 2rem;
 }
 
 .intro-section .intro {
@@ -82,16 +83,20 @@ footer {
     max-width: 100%;
 }
 
-.about-section h2 {
+.about-section {
+    border: 3px inset #296d98;
     padding: 3rem 0;
 }
 
 .about-section h2 {
+    padding-bottom: 3rem;
     text-align: center;
 }
 
 .about-section p {
-    font-size: .75rem;
+    font-size: .83rem;
+    padding: 0 2rem;
+    line-height: 1.5;
 }
 
 .work-column {
@@ -102,10 +107,11 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    border: 3px outset #296d98;
 }
 
 .work-column h2 {
-    padding: 3rem 0;
+    padding: 2rem 0 2rem;
 }
 
 .work-section-main {
@@ -229,7 +235,7 @@ footer {
     }
 
     .img-intro {
-        max-width: 80%;
+        max-width: 60%;
     }
 
     header h1 {
