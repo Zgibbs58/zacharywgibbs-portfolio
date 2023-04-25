@@ -31,6 +31,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
+    transition: .75s;
 }
 
 header a,
@@ -84,7 +85,7 @@ footer {
 }
 
 .about-section {
-    border: 3px inset #296d98;
+    border-top: 7px inset #296d98;
     padding: 3rem 0;
 }
 
@@ -107,7 +108,8 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border: 3px outset #296d98;
+    border-top: 7px outset #296d98;
+    border-bottom: 7px outset #296d98;
 }
 
 .work-column h2 {
