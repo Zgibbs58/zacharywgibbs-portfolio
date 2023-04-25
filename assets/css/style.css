@@ -217,11 +217,11 @@ footer {
 .contact-section a {
     text-decoration: none;
     color: black;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .2s;
 }
 
 .contact-section a:hover {
-    color: #296d98;
+    color: #4ea7df;
 }
 
   @media screen and (max-width: 614px) {
