@@ -6,6 +6,7 @@ This a portfolio website showcasing my projects and skills. It has a working nav
 ## Resources
 
 [deployedlink](https://zgibbs58.github.io/zacharywgibbs-portfolio/)
+
 [repositorylink](https://github.com/Zgibbs58/zacharywgibbs-portfolio)
 
 ### Screen
