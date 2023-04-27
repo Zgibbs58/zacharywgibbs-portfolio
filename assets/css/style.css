@@ -273,7 +273,7 @@ main footer {
     }
 
     .work-section-main img {
-        min-height: 7rem;
+        aspect-ratio: 10/4;
     }
 
     .work-section-secondary {
