@@ -94,9 +94,10 @@ nav a:hover {
     padding: 3rem 0;
 }
 
-.about-section h2 {
+.about-section h3 {
     padding-bottom: 3rem;
     text-align: center;
+    font-size: 2rem;
 }
 
 .about-section p {
@@ -119,8 +120,9 @@ nav a:hover {
     border-bottom: 7px outset #296d98;
 }
 
-.work-column h2 {
+.work-column h3 {
     padding: 2rem 0 2rem;
+    font-size: 2rem;
 }
 
 .work-section-main {
@@ -205,11 +207,12 @@ nav a:hover {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem 0 3rem;
 }
 
 .contact-section h3 {
     padding: 1rem;
+    font-size: 2rem;
 }
 
 .contact-section ul {
@@ -230,6 +233,12 @@ nav a:hover {
 
 .contact-section a:hover {
     color: #4ea7df;
+}
+
+footer {
+    background-color: #296d98;
+    color: white;
+    text-align: center;
 }
 
   @media screen and (max-width: 614px) {
